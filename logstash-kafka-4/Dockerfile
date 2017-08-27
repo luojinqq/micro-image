@@ -12,4 +12,6 @@ ONBUILD RUN gem sources -l
 
 RUN /usr/share/logstash/bin/logstash-plugin uninstall logstash-input-kafka\
     &&/usr/share/logstash/bin/logstash-plugin install --version 4.2.0 logstash-input-kafka
+RUN /usr/share/logstash/bin/logstash-plugin uninstall logstash-input-kafka\
+    &&/usr/share/logstash/bin/logstash-plugin install --version 4.2.0 logstash-output-kafka
 #ADD logstash-input-kafka-4.2.0 /usr/share/logstash/logstash-input-kafka-4.2.0
