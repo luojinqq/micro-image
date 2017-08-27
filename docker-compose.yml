@@ -1,0 +1,14 @@
+version: '2'
+services: 
+  # logstash-kafka-4:
+  #   build: logstash-kafka-4
+  #   image: ${G7PAY_DOCKER_REGISTRY}/g7/baseimage:logstash-kafka-4
+  debian:
+    build: debian
+    image: ${G7PAY_DOCKER_REGISTRY}/g7/baseimage:debian
+  dockerize:
+    build: dockerize
+    image: ${G7PAY_DOCKER_REGISTRY}/g7/baseimage:dockerize
+  filebeat:
+    build: filebeat
+    image: ${G7PAY_DOCKER_REGISTRY}/g7/baseimage:filebeat
