@@ -1,0 +1,7 @@
+version: '2'
+services:
+  kafa: 
+    build: 
+      context: ./
+      dockerfile: kafa-dockerfile
+    image: registry.cn-beijing.aliyuncs.com/g7/kafka:0.9
