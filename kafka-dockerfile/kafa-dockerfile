@@ -1,2 +1,0 @@
-FROM rawmind/rancher-kafka:0.9.0
-ADD server.properties.tmpl /etc/confd/templates/server.properties.tmpl
